@@ -10,6 +10,9 @@ jobs:
       - image: circleci/node:11
     steps:
       - checkout
+      - add_ssh_keys:
+          fingerprints:
+            - "a7:27:7f:02:4a:e4:06:56:2c:15:a9:f0:40:6c:ba:ee"
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package-lock.json" }}
