@@ -1,6 +1,11 @@
 version: 2
 jobs:
   build:
+    branches:
+        only:
+            react
+        ignore:
+            master
     docker:
       - image: circleci/node:11
     steps:
