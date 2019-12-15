@@ -1,0 +1,44 @@
+.nav {
+    &__bar {
+        background-color: black;
+        padding: 10px 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+
+        .container {
+            margin-left: 4%;
+            margin-right: 4%;
+            padding: 0 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__header {
+        header {
+            color: white;
+            font-size: 2em;
+            font-family: 'Aladin', cursive;
+            letter-spacing: 1px;
+        }
+    }
+
+    &__items-list {
+        display: flex;
+    }
+
+    &__item {
+        color: white;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+
+        > a {
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }   
+    }
+}

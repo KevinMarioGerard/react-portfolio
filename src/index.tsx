@@ -1,10 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-const App = props => {
-    return (
-        <div>Under Construction!!</div>
-    );
-};
+import App from './app/App';
+import './sass/style.scss';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById('root'));
