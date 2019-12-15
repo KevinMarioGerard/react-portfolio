@@ -42,6 +42,7 @@
         "css-loader": "^3.2.1",
         "gh-pages": "^2.1.1",
         "prettier": "^1.19.1",
+        "sass-loader": "^8.0.0",
         "style-loader": "^1.0.1",
         "ts-loader": "^6.2.1",
         "typescript": "^3.7.3",
@@ -50,6 +51,7 @@
         "webpack-dev-server": "^3.9.0"
     },
     "dependencies": {
+        "node-sass": "^4.13.0",
         "react": "^16.12.0",
         "react-dom": "^16.12.0",
         "react-router": "^5.1.2"
