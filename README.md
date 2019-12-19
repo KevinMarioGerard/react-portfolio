@@ -1,2 +1,2 @@
 # kevinmariogerard.github.io
-My personal portfolio built in react.
+My personal portfolio (https://kevinmariogerard.github.io/) built in react.
