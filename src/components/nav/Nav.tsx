@@ -27,7 +27,7 @@ const NavItem: React.FC<NavItemProps> = ({ label = '', id = '' }) => (
     </div>
 );
 
-NavItem.displayName = 'NavItem';
+NavItem.displayName = 'Nav.Item';
 
 type Statics = {
     Header: typeof NavHeader;
