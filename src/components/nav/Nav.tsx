@@ -2,11 +2,17 @@ import * as React from 'react';
 
 type NavHeaderProps = {
     header: string;
+    caption?: string;
 };
 
-const NavHeader: React.FC<NavHeaderProps> = ({ header = '' }) => (
+const NavHeader: React.FC<NavHeaderProps> = ({ header = '', caption }) => (
     <div className="nav__header">
         <header>{header}</header>
+        {caption ? (
+            <div className="nav__header__caption">
+                <span>{caption}</span>
+            </div>
+        ) : null}
     </div>
 );
 
@@ -36,10 +42,12 @@ type Statics = {
 };
 
 const Nav: React.FC & Statics = props => (
-    <nav className="nav__bar">
-        <div className="container">{props.children}</div>
+    <nav className="shell__nav">
+        {props.children}
     </nav>
 );
+
+Nav.displayName = 'Nav';
 
 Nav.Header = NavHeader;
 Nav.ItemsList = NavItemsList;

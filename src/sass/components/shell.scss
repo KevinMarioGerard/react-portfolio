@@ -1,0 +1,14 @@
+.shell {
+    display: grid;
+    grid-template-columns: 200px calc(100% - 200px);
+    grid-template-areas: 'Nav Main';
+    height: 100vh;
+
+    &__main {
+        grid-area: Main;
+    }
+
+    &__nav {
+        grid-area: Nav;
+    }
+}

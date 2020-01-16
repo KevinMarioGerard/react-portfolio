@@ -1,44 +1,85 @@
-.nav {
-    &__bar {
-        background-color: black;
-        padding: 10px 0;
-        position: fixed;
-        left: 0;
-        right: 0;
+.shell__nav {
+    background-color: black;
 
-        .container {
-            margin-left: 4%;
-            margin-right: 4%;
-            padding: 0 15px;
+    .nav {
+        &__header {
+            padding: 20px 20px;
+            border-bottom: 1px solid white;
+
+            header {
+                color: white;
+                font-size: 25px;
+                font-family: 'Aladin', cursive;
+                letter-spacing: 1px;
+            }
+        }
+
+        &__items-list {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column;
+        }
+
+        &__item {
+            color: white;
+            padding: 10px 20px;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+
+            &:after{
+                position: absolute;
+                content: '';
+                color: transparent;
+                border-radius: 50%;
+                background: transparent;
+            }
+
+            &:before {
+                transition: all .5s;
+            }
+
+            &:hover {
+                color: black;
+                cursor: pointer;
+                font-weight: 800;
+            }
+
+            &:hover:after {
+                animation: circle 1.5s ease-in forwards;
+            }
+
+            > a {
+                font-family: 'Ubuntu', sans-serif;
+                color: inherit;
+                text-decoration: none;
+            }
         }
     }
 
-    &__header {
-        header {
-            color: white;
-            font-size: 2em;
-            font-family: 'Aladin', cursive;
-            letter-spacing: 1px;
+    @keyframes circle {
+        0% {
+            width: 1px;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            height: 1px;
+            z-index: -1;
+            background: #eee;
+            border-radius: 100%;
         }
-    }
-
-    &__items-list {
-        display: flex;
-    }
-
-    &__item {
-        color: white;
-        padding: 0 10px;
-        display: flex;
-        align-items: center;
-
-        > a {
-            font-family: 'Ubuntu', sans-serif;
-            color: white;
-            text-decoration: none;
-            font-size: 1em;
-        }   
+        100% {
+            background: white;
+            height: 5000%;
+            width: 5000%;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 0;
+        }
     }
 }
