@@ -1,10 +1,22 @@
 import * as React from 'react';
 import Shell from '../../components/shell/Shell';
+import Icon from '../../components/icon/Icon';
+import Links from '../constants/Links';
 
 const NavBar = () => {
     return (
         <Shell.Nav>
-            <Shell.Nav.Header header="Kevin Mario Gerard" caption="Software Engineer" />
+            <Shell.Nav.Header
+                header="KEVIN MARIO GERARD"
+                caption="Software Developer"
+                profilePicSrc="/img/me.JPG"
+                footerIcons={
+                    <>
+                        <Icon icon="fa-github" redirectionUrl={Links.githubUrl} />
+                        <Icon icon="fa-linkedin" redirectionUrl={Links.linkedInUrl} />
+                    </>
+                }
+            />
             <Shell.Nav.ItemsList>
                 <Shell.Nav.Item label="Home" id="home" />
                 <Shell.Nav.Item label="About" id="about" />

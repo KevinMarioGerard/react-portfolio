@@ -1,0 +1,13 @@
+.icon {
+    &__container {
+        padding: 5px;
+    }
+
+    i {
+        font-size: 25px;
+    }
+
+    i:hover {
+        cursor: pointer;
+    }
+}

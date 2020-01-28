@@ -1,16 +1,30 @@
 .shell__nav {
     background-color: black;
+    color: white;
 
     .nav {
         &__header {
             padding: 20px 20px;
             border-bottom: 1px solid white;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
 
             header {
-                color: white;
-                font-size: 25px;
-                font-family: 'Aladin', cursive;
+                font-size: 20px;
+                font-family: 'Roboto', sans-serif;
                 letter-spacing: 1px;
+                padding: 5px 0;
+            }
+
+            &__caption {
+                font-family: 'Ubuntu', sans-serif;
+                padding: 5px 0;
+            }
+
+            &__footer {
+                display: flex;
+                flex-direction: row;
             }
         }
 
@@ -20,7 +34,6 @@
         }
 
         &__item {
-            color: white;
             padding: 10px 20px;
             position: relative;
             overflow: hidden;
