@@ -40,7 +40,11 @@ jobs:
                     - "74:c6:f8:85:5a:99:a5:87:50:e4:63:c3:f3:9a:f4:73"
             - attach_workspace:
                 at: ~/react-portfolio
-            - run: ls
+            - run: 
+                name: configure git
+                command: |
+                    git config user.email "kevinmariogerard@gmail.com"
+                    git config user.name "KevinMarioGerard"
             - run:
                 name: Deploy
                 command: npm run deploy
