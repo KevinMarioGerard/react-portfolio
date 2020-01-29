@@ -39,6 +39,10 @@
             overflow: hidden;
             z-index: 1;
 
+            &__icon {
+                padding-right: 10px;
+            }
+
             &:after{
                 position: absolute;
                 content: '';

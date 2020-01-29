@@ -18,12 +18,12 @@ const NavBar = () => {
                 }
             />
             <Shell.Nav.ItemsList>
-                <Shell.Nav.Item label="About" id="about" />
-                <Shell.Nav.Item label="Experience" id="experience" />
-                <Shell.Nav.Item label="Education" id="education" />
-                <Shell.Nav.Item label="Tech Skills" id="techSkills" />
-                <Shell.Nav.Item label="Contact" id="contact" />
-                <Shell.Nav.Item label="Resume" id="resume" />
+                <Shell.Nav.Item label="About" id="about" icon="fa fa-user-circle"/>
+                <Shell.Nav.Item label="Experience" id="experience" icon="fa fa-list-ul" />
+                <Shell.Nav.Item label="Education" id="education" icon="fa fa-graduation-cap"/>
+                <Shell.Nav.Item label="Tech Skills" id="techSkills" icon="fa fa-code" />
+                <Shell.Nav.Item label="Contact" id="contact" icon="fa  fa-comments" />
+                <Shell.Nav.Item label="Resume" id="resume" icon="fa fa-file-text" />
             </Shell.Nav.ItemsList>
         </Shell.Nav>
     );

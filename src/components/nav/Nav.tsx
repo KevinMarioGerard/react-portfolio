@@ -34,10 +34,12 @@ NavItemsList.displayName = 'Nav.ItemsList';
 type NavItemProps = {
     label: string;
     id: string;
+    icon?: string;
 };
 
-const NavItem: React.FC<NavItemProps> = ({ label = '', id = '' }) => (
+const NavItem: React.FC<NavItemProps> = ({ label = '', id = '', icon = '' }) => (
     <div className="nav__item">
+        <i className={`nav__item__icon ${icon}`} />
         <a href={`#${id}`}>{label}</a>
     </div>
 );
