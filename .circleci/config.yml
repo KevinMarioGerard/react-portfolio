@@ -13,8 +13,8 @@ jobs:
                 keys:
                     - v1-dependencies-{{ checksum "package-lock.json" }}
             - run:
-                name: NPM Package install
-                command: npm ci
+                name: Install packages
+                command: npm install
             - save_cache:
                 paths:
                     - node_modules
@@ -44,12 +44,14 @@ jobs:
                     - "74:c6:f8:85:5a:99:a5:87:50:e4:63:c3:f3:9a:f4:73"
             - attach_workspace:
                 at: ~/react-portfolio
-            - run: ls dist
             - run: 
-                name: configure git
+                name: Configure git
                 command: |
                     git config user.email "kevinmariogerard@gmail.com"
                     git config user.name "KevinMarioGerard"
+            - run:
+                name: Install package gh-pages
+                command: npm install gh-pages
             - run:
                 name: Deploy
                 command: npm run deploy
