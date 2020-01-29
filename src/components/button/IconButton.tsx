@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-type IconProps = {
+type IconButtonProps = {
     icon: string;
     redirectionUrl: string;
 };
 
-const Icon: React.FC<IconProps> = ({ icon = '', redirectionUrl = '' }) => (
+const IconButton: React.FC<IconButtonProps> = ({ icon = '', redirectionUrl = '' }) => (
     <div
         className="icon icon__container"
         onClick={React.useCallback(() => {
@@ -15,4 +15,4 @@ const Icon: React.FC<IconProps> = ({ icon = '', redirectionUrl = '' }) => (
     </div>
 );
 
-export default Icon;
+export default IconButton;
