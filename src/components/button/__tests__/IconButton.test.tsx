@@ -19,7 +19,7 @@ describe('Icon Button tests', () => {
     it('should redirect on click', () => {
         window.open = jest.fn();
 
-        const { container, getByTestId } = render(
+        const { getByTestId } = render(
             <IconButton data-testid="icon-button" icon="fa-github" redirectionUrl="test-url.com" />
         );
 

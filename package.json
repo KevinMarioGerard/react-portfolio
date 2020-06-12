@@ -8,7 +8,8 @@
         "build": "webpack --mode production",
         "deploy": "gh-pages -r https://github.com/KevinMarioGerard/kevinmariogerard.github.io -b master -d dist",
         "prettier": "prettier --write \"src/**/*.{ts,tsx}\"",
-        "test": "cross-env BABEL_ENV=test jest --silent"
+        "test": "cross-env BABEL_ENV=test jest --silent",
+        "clean": "tsc --build --clean"
     },
     "repository": {
         "type": "git",
@@ -43,6 +44,7 @@
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^3.0.0",
         "copy-webpack-plugin": "^5.0.5",
+        "coveralls": "^3.1.0",
         "cross-env": "^7.0.2",
         "css-loader": "^3.2.1",
         "gh-pages": "^2.1.1",
