@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon Button tests should match snapshot 1`] = `
+<div>
+  <div
+    class="icon icon__container"
+  >
+    <i
+      class="fa fa-github"
+    />
+  </div>
+</div>
+`;
