@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Profile Pic Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="profile__container"
+  >
+    <img
+      alt="Profile Pic"
+      class="profile__pic"
+      src="test-image"
+    />
+  </div>
+</div>
+`;

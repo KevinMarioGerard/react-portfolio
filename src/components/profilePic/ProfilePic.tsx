@@ -1,6 +1,9 @@
 import * as React from 'react';
 
 export type ProfilePicProps = {
+    /**
+     * Image source for profile pic
+     */
     profilePicSrc: string;
 };
 

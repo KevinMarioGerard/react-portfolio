@@ -2,7 +2,7 @@ import { render, fireEvent } from '@testing-library/react';
 import IconButton from '../IconButton';
 import * as React from 'react';
 
-describe('Icon Button tests', () => {
+describe('Icon Button Component tests', () => {
     
     it('should render without errors', () => {
         expect(() => {
