@@ -1,7 +1,14 @@
 module.exports = {
-    collectCoverage: true,
-    coverageDirectory: 'coverage',
-    coverageReporters: ['text', 'html', 'text-summary', 'lcov'],
-    collectCoverageFrom: ['src/**/*.{ts,tsx}'],
-    testPathIgnorePatterns: ['<rootDir>/src/index.ts', '<rootDir>/docs/*']
+  preset: 'ts-jest',
+  testEnvironment: 'jsdom',
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coverageReporters: ['text', 'html', 'text-summary', 'lcov'],
+  collectCoverageFrom: ['src/**/*.{ts,tsx}'],
+  testPathIgnorePatterns: ['<rootDir>/src/index.ts', '<rootDir>/docs/*'],
+  globals: {
+    'ts-jest': {
+        tsConfig: '<rootDir>/tsconfig.test.json',
+    },
+  },
 };
