@@ -7,7 +7,7 @@ export type ProfilePicProps = {
     profilePicSrc: string;
 };
 
-const ProfilePic: React.FC<ProfilePicProps> = ({ profilePicSrc = '' }) => {
+const ProfilePic: React.FC<ProfilePicProps> = ({ profilePicSrc }) => {
     return (
         <div className="profile__container">
             <img className="profile__pic" src={profilePicSrc} alt="Profile Pic" />

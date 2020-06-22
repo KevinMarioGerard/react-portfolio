@@ -12,7 +12,7 @@ type IconButtonProps = {
     redirectionUrl: string;
 };
 
-const IconButton: React.FC<IconButtonProps> = ({ icon = '', redirectionUrl = '', ...rest }) => (
+const IconButton: React.FC<IconButtonProps> = ({ icon, redirectionUrl, ...rest }) => (
     <div
         className="icon icon__container"
         onClick={React.useCallback(() => {
