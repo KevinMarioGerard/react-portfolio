@@ -2,8 +2,19 @@ import * as React from 'react';
 import ProfilePic, { ProfilePicProps } from '../profilePic/ProfilePic';
 
 type NavHeaderProps = {
+    /**
+     * Nav Header label to render
+     */
     header: string;
+
+    /**
+     * Nav Header caption to render
+     */
     caption?: string;
+
+    /**
+     * Nav footer icon buttons to render
+     */
     footerIcons?: React.ReactNode;
 } & ProfilePicProps;
 
@@ -32,13 +43,24 @@ const NavItemsList: React.FC = props => <div className="nav__items-list">{props.
 NavItemsList.displayName = 'Nav.ItemsList';
 
 type NavItemProps = {
+    /**
+     * Nav Item Label
+     */
     label: string;
+
+    /**
+     * Nav Item id
+     */
     id: string;
+
+    /**
+     * Nav Item icon
+     */
     icon?: string;
 };
 
-const NavItem: React.FC<NavItemProps> = ({ label = '', id = '', icon = '' }) => (
-    <div className="nav__item">
+const NavItem: React.FC<NavItemProps> = ({ label = '', id = '', icon = '', ...rest }) => (
+    <div className="nav__item" {...rest}>
         <i className={`nav__item__icon ${icon}`} />
         <a href={`#${id}`}>{label}</a>
     </div>

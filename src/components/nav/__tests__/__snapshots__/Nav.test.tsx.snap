@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Header Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="nav__header"
+  >
+    <div
+      class="profile__container"
+    >
+      <img
+        alt="Profile Pic"
+        class="profile__pic"
+        src="test-image"
+      />
+    </div>
+    <header>
+      Test Header
+    </header>
+    <div
+      class="nav__header__caption"
+    >
+      <span>
+        Test Caption
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Nav Header Component tests should render footer icons 1`] = `
+<div>
+  <div
+    class="nav__header"
+  >
+    <div
+      class="profile__container"
+    >
+      <img
+        alt="Profile Pic"
+        class="profile__pic"
+        src="test-image"
+      />
+    </div>
+    <header>
+      Test Header
+    </header>
+    <div
+      class="nav__header__caption"
+    >
+      <span>
+        Test Caption
+      </span>
+    </div>
+    <div
+      class="nav__header__footer"
+    >
+      <div
+        class="icon icon__container"
+      >
+        <i
+          class="fa fa-github"
+        />
+      </div>
+      <div
+        class="icon icon__container"
+      >
+        <i
+          class="fa fa-linkedin"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Nav Item Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="nav__item"
+  >
+    <i
+      class="nav__item__icon "
+    />
+    <a
+      href="#test"
+    >
+      Test
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Nav Items List Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="nav__items-list"
+  >
+    <div
+      class="nav__item"
+    >
+      <i
+        class="nav__item__icon "
+      />
+      <a
+        href="#test"
+      >
+        Test
+      </a>
+    </div>
+  </div>
+</div>
+`;

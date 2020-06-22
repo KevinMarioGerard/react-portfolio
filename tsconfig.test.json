@@ -24,7 +24,6 @@
         "lib": ["dom", "es2015"]
     },
     "exclude": [
-        "node_modules/",
-        "**/__tests__"
+        "node_modules/"
     ]
 }
