@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shell Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="shell"
+  >
+    <nav
+      class="shell__nav"
+    />
+    <main
+      class="shell__main"
+    >
+      <div
+        class="shell__main__container"
+      />
+    </main>
+  </div>
+</div>
+`;
