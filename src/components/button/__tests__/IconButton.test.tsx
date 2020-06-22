@@ -3,7 +3,6 @@ import IconButton from '../IconButton';
 import * as React from 'react';
 
 describe('Icon Button Component tests', () => {
-    
     it('should render without errors', () => {
         expect(() => {
             render(<IconButton icon="" redirectionUrl="" />);
