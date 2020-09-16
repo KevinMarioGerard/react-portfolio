@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section Component tests should match snapshot 1`] = `
+<div>
+  <section
+    class="section__container"
+    id="id1"
+  />
+</div>
+`;
+
+exports[`Section Content Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="section__content"
+  >
+    Mock Section content
+  </div>
+</div>
+`;
+
+exports[`Section Header Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="section__header"
+  >
+    <i
+      class="section__header__icon "
+    />
+    <span
+      class="section__title"
+    >
+      SECTION TITLE
+    </span>
+  </div>
+  <hr
+    class="separator"
+  />
+</div>
+`;
