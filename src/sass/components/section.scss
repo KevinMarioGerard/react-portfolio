@@ -1,0 +1,20 @@
+.section {
+    &__container {
+        padding: 20px;
+    }
+
+    &__header {
+        padding: 10px;
+        font-size: 25px;
+
+        &__icon {
+            padding-right: 10px;
+        }
+    }
+
+    &__content {
+        padding: 10px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
