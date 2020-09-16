@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Nav Footer Component tests should match snapshot 1`] = `
+<div>
+  <footer
+    class="nav__footer"
+  >
+    Test Navigation Footer
+  </footer>
+</div>
+`;
+
 exports[`Nav Header Component tests should match snapshot 1`] = `
 <div>
   <div
@@ -82,11 +92,9 @@ exports[`Nav Item Component tests should match snapshot 1`] = `
     <i
       class="nav__item__icon "
     />
-    <a
-      href="#test"
-    >
+    <label>
       Test
-    </a>
+    </label>
   </div>
 </div>
 `;
@@ -102,11 +110,9 @@ exports[`Nav Items List Component tests should match snapshot 1`] = `
       <i
         class="nav__item__icon "
       />
-      <a
-        href="#test"
-      >
+      <label>
         Test
-      </a>
+      </label>
     </div>
   </div>
 </div>
