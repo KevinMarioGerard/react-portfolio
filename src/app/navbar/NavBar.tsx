@@ -3,6 +3,8 @@ import Shell from '../../components/shell/Shell';
 import IconButton from '../../components/button/IconButton';
 import Links from '../constants/Links';
 
+const footerStyle = { textDecoration: 'none', color: 'inherit' };
+
 const NavBar = () => {
     return (
         <Shell.Nav>
@@ -23,7 +25,11 @@ const NavBar = () => {
                 <Shell.Nav.Item label="Tech Skills" id="techSkills" icon="fa fa-code" />
                 <Shell.Nav.Item label="Contact" id="contact" icon="fa fa-comments" />
             </Shell.Nav.ItemsList>
-            <Shell.Nav.Footer>Designed & Built by Kevin Mario Gerard</Shell.Nav.Footer>
+            <Shell.Nav.Footer>
+                <a href={Links.repoUrl} style={footerStyle}>
+                    Designed & Built by Kevin Mario Gerard
+                </a>
+            </Shell.Nav.Footer>
         </Shell.Nav>
     );
 };
