@@ -1,15 +1,16 @@
 .shell {
     display: grid;
-    grid-template-columns: 400px calc(100% - 400px);
+    grid-template-columns: #{$nav-width} calc(100% - #{$nav-width});
     grid-template-areas: 'Nav Main';
     height: 100vh;
 
     &__main {
         grid-area: Main;
-        background-color: #e5e5e5;
+        background-color: white;
+        overflow-y: scroll;
 
         &__container {
-            overflow-y: auto;
+            padding: 20px;
         }
     }
 
