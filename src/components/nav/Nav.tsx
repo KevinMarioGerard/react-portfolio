@@ -59,19 +59,31 @@ type NavItemProps = {
     icon?: string;
 };
 
-const NavItem: React.FC<NavItemProps> = ({ label = '', id = '', icon = '', ...rest }) => (
-    <div className="nav__item" {...rest}>
-        <i className={`nav__item__icon ${icon}`} />
-        <a href={`#${id}`}>{label}</a>
-    </div>
-);
+const NavItem: React.FC<NavItemProps> = ({ label = '', id = '', icon = '' }) => {
+    const onClick = React.useCallback(() => {
+        var element = document.getElementById(id);
+        element?.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    }, [id]);
+
+    return (
+        <div className="nav__item" onClick={onClick}>
+            <i className={`nav__item__icon ${icon}`} />
+            <label>{label}</label>
+        </div>
+    );
+};
 
 NavItem.displayName = 'Nav.Item';
+
+const NavFooter: React.FC = ({ children }) => <footer className="nav__footer">{children}</footer>;
+
+NavFooter.displayName = 'Nav.Footer';
 
 type Statics = {
     Header: typeof NavHeader;
     Item: typeof NavItem;
     ItemsList: typeof NavItemsList;
+    Footer: typeof NavFooter;
 };
 
 const Nav: React.FC & Statics = props => <nav className="shell__nav">{props.children}</nav>;
@@ -81,5 +93,6 @@ Nav.displayName = 'Nav';
 Nav.Header = NavHeader;
 Nav.ItemsList = NavItemsList;
 Nav.Item = NavItem;
+Nav.Footer = NavFooter;
 
 export default Nav;

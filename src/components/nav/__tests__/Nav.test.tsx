@@ -72,3 +72,17 @@ describe('Nav Item Component tests', () => {
         expect(container).toMatchSnapshot();
     });
 });
+
+describe('Nav Footer Component tests', () => {
+    it('should render without errors', () => {
+        expect(() => {
+            render(<Nav.Footer />);
+        }).not.toThrow();
+    });
+
+    it('should match snapshot', () => {
+        const { container } = render(<Nav.Footer>Test Navigation Footer</Nav.Footer>);
+
+        expect(container).toMatchSnapshot();
+    });
+});
