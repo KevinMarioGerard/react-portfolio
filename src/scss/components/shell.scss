@@ -8,6 +8,7 @@
         grid-area: Main;
         background-color: white;
         overflow-y: scroll;
+        color: $font-color-content;
 
         &__container {
             padding: 20px;
