@@ -1,0 +1,173 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Experience Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="experience__container"
+  >
+    <div
+      class="experience__tabs"
+    >
+      <div
+        class="experience__tabs__container"
+      >
+        <div
+          class="experience__tab experience__tab--selected"
+          id="test1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </div>
+        <div
+          class="experience__tab "
+          id="test2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </div>
+        <div
+          class="experience__tab "
+          id="test3"
+        >
+          <span>
+            Tab 3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="experience__content__container"
+      id="test1"
+    >
+      <div
+        class="experience__item__container"
+      >
+        <h3
+          class="experience__item__header"
+        >
+          <span
+            class="experience__item__title"
+          >
+            Associate Software Engineer
+          </span>
+          <span
+            class="experience__item__company"
+          >
+             @ 
+            <span>
+              Test 1
+            </span>
+          </span>
+        </h3>
+        <span
+          class="experience__item__duration"
+        >
+          July 2019
+           - 
+          Present
+        </span>
+        <div
+          class="experience__item__description"
+        >
+          <ul>
+            <li>
+              description line 1
+            </li>
+            <li>
+              description line 2
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Experience Component tests should update content on click 1`] = `
+<div>
+  <div
+    class="experience__container"
+  >
+    <div
+      class="experience__tabs"
+    >
+      <div
+        class="experience__tabs__container"
+      >
+        <div
+          class="experience__tab "
+          id="test1"
+        >
+          <span>
+            Tab 1
+          </span>
+        </div>
+        <div
+          class="experience__tab "
+          id="test2"
+        >
+          <span>
+            Tab 2
+          </span>
+        </div>
+        <div
+          class="experience__tab experience__tab--selected"
+          id="test3"
+        >
+          <span>
+            Tab 3
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="experience__content__container"
+      id="test3"
+    >
+      <div
+        class="experience__item__container"
+      >
+        <h3
+          class="experience__item__header"
+        >
+          <span
+            class="experience__item__title"
+          >
+            Full Stack Developer
+          </span>
+          <span
+            class="experience__item__company"
+          >
+             @ 
+            <span>
+              Test 3
+            </span>
+          </span>
+        </h3>
+        <span
+          class="experience__item__duration"
+        >
+          July 2019
+           - 
+          Present
+        </span>
+        <div
+          class="experience__item__description"
+        >
+          <ul>
+            <li>
+              description line 1
+            </li>
+            <li>
+              description line 2
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

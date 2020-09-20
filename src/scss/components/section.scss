@@ -1,11 +1,24 @@
 .section {
     &__container {
+        margin: 40px 0;
         padding: 20px;
+        background-image: linear-gradient(black, black),
+                    linear-gradient(black, black),
+                    linear-gradient(black, black),
+                    linear-gradient(black, black);
+        background-repeat: no-repeat;
+        background-size: 5px 50%, 50% 5px, 5px 50%, 50% 5px, calc(100% - 8px) calc(100% - 8px);
+        background-position: left bottom, left bottom, right top, right top, 4px 4px;
+          
+        .separator {
+            color: black;
+        }
     }
 
     &__header {
         padding: 10px;
-        font-size: 25px;
+        font-size: $font-size-header;
+        color: $font-color-header;
 
         &__icon {
             padding-right: 10px;
@@ -16,5 +29,6 @@
         padding: 10px;
         line-height: 1.5;
         text-align: justify;
+        font-size: $font-size-content;
     }
 }
