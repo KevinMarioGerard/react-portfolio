@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Item Component tests should match snapshot 1`] = `
+<div>
+  <div
+    class="project__item"
+  >
+    <h3
+      class="project__item__header"
+    >
+      React Portfolio
+    </h3>
+    <div
+      class="project__item__description"
+    >
+      My personal portfolio website I designed and built. Learned quite a bit about UI development, SEO, etc.
+    </div>
+    <ul
+      class="project__tech__list"
+    >
+      <li>
+        <span>
+          ReactJS
+        </span>
+      </li>
+      <li>
+        <span>
+          Typescript
+        </span>
+      </li>
+      <li>
+        <span>
+          SCSS
+        </span>
+      </li>
+    </ul>
+    <footer
+      class="project__item__footer"
+    >
+      <div
+        class="icon icon__container"
+      >
+        <i
+          class="fa fa-github"
+        />
+      </div>
+    </footer>
+  </div>
+</div>
+`;
