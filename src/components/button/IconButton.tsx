@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-type IconButtonProps = {
+export type IconButtonProps = {
     /**
      * Icon to render
      */
