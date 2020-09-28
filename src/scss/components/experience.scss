@@ -33,6 +33,14 @@ $font-size-job-description: 15px;
         &__container {
             width: 55%;
             padding-left: 25px;
+            opacity: 1;
+            animation: fade 0.5s linear;
+        }
+
+        @keyframes fade {
+            0% { opacity: 0; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
         }
     }
 
